@@ -1,0 +1,35 @@
+[user]
+  name = Leszek Zalewski
+  email = leszek.zalewski@zalesz.com
+
+[alias]
+  co = checkout
+  s  = status
+  stauts = status
+  p = push
+  puhs = push
+  psuh = push
+  lo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[core]
+  editor = vim -f
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+  grep = auto
+
+[color "grep"]
+  external = --color=always
+
+[push]
+  default = upstream
+
+[pull]
+  rebase = true
+
+[merge]
+  ff = false
