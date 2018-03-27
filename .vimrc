@@ -1,5 +1,11 @@
 set nocompatible              " be iMproved, required
 
+" Install vim-plug first
+"
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+
 " Specify a directory for plugins
 " " - For Neovim: ~/.local/share/nvim/plugged
 " " - Avoid using standard Vim directory names like 'plugin'
@@ -48,8 +54,8 @@ set tabstop=2
 
 
 " Set Buckup directory
-set backupdir=$HOME/.vimbackup,~/tmp
-set directory=$HOME/.vimbackup,~/tmp
+set backupdir=$HOME/.vim/backup
+set directory=$HOME/.vim/backup
 
 " DeleteTrailingWhitespace
 " ------------------------------------------------------------------------------------------------
