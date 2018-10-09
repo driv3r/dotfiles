@@ -157,6 +157,7 @@ set hlsearch            " highlight all search matches
 set smartcase           " pay attention to case when caps are used
 set incsearch           " show search results as I type
 
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " Enable pasting from external applications like a web browser
 " ------------------------------------------------------------------------------------------------
