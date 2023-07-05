@@ -96,6 +96,7 @@ vim.keymap.set('n', '<leader>p', '<cmd>Files<cr>')
 vim.keymap.set('n', '<leader>r', '<cmd>Tags<cr>')
 vim.env.FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore sorbet -g ""'
 
+require('nvim-web-devicons').setup({})
 
 -- Lualine
 --
@@ -229,12 +230,19 @@ vim.api.nvim_create_autocmd('User', {
   end
 })
 
-lspconfig.solargraph.setup({})
+-- lspconfig.solargraph.setup({})
 -- lspconfig.sorbet.setup({})
+lspconfig.ruby_ls.setup({})
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
 lspconfig.tailwindcss.setup({})
-lspconfig.yamlls.setup({})
+lspconfig.yamlls.setup({
+  settings = {
+    yaml = {
+      keyOrdering = false
+    }
+  }
+})
 lspconfig.jsonls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.dockerls.setup({})

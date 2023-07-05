@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
 
   use 'Rigellute/shades-of-purple.vim'
 
-  use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
 
   -- highlight on steroids
